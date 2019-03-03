@@ -1,32 +1,437 @@
+a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: 0 0;
+  margin: 0;
+}
 .App {
   text-align: center;
+  background-color: white;
+  color: #2C2F33;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  min-height: 100%;
+}
+a{
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.centered{
+  margin: 0 auto !important;
+}
+#vert-centered{
+  position: absolute; 
+  top: 30vh;
+  left: 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form {
+  margin: auto;
+  width: 40vw;
+}
+.ccs-login{
+  height: 200px;
+  width: 200px;
+}
+.nav-bar {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 100px;
+}
+.navigation {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  background-color: #e9ecef;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  z-index: 99;
+}
+.navigation-container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.nav-links {
+
+}
+.nav-links a {
+  color: #2C2F33;
+  font-size: 14pt;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+
+.nav-link-header{
+  text-decoration: none !important;
+  margin: 10px;
+  width: 100px;
+  background: white;
+}
+
+.nav-social {
+  float: right;
+  display: flex;
+  height: auto;
+  align-items: baseline; 
+  position: absolute;
+  right: 0;
+}
+
+
+.nav-links li {
+  display: inline-block;
+  list-style-type: none;
+  height: 30px;
+  
+}
+nav ul li a {
+  display: block;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .1.5s;
+}
+nav ul li a:hover {
+  color: orange !important;
+}
+
+.nav-logo {
+  height: 100px;
+  width: 100px;
+  transition: .3s;
+  float: left;
+}
+
+.nav-link{
+  align-self: flex-end;
+  float: right;
+}
+
+.main-content{
+  display: block;
+}
+
+/* grid container for main page */
+.main-page {    
+   
+}
+
+/* grid content first line */
+.welcome-text {
+list-style: none;
+font-size: 2.5rem;
+}
+
+a.test {
+  display: inline-block!important;
+  color: orange!important;
+  font-size: 2.5rem;
+}
+a.test:hover {
+  text-decoration: none;
+}
+
+/* schedule */
+.scroll-menu {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.scroll-menu img{
+  display: inline-block;
+  text-align: center;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.main-jumbotron {
+  width: 80vw;
+  margin: 300px auto 10vh auto;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.my-team {
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+}
+
+
+/* Social media logos */
+.nav-social {
+  list-style: none;
+}
+.social-logos {
+  height: 30px;
+  width: 30px;
+}
+
+/* Team page */
+.team-jumbo {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: auto;
+  margin-left: auto;
+  height: 700px;
+  width: 85vw;
+}
+.team-logo {
+  height: 400px;
+  width: 400px;
+  float: left;
+}
+.team-player {
+  margin-top: 100px;
+  height: 200px;
+  width: 175px;
+  grid-column-start: 2
+}
+.team-info {
+  display: flex;
+  
+}
+.team-name {
+  font-size: 80pt;
+}
+.record {
+  font-size: 50pt;
+  margin-top: 30px;
+  width: 400px;
+  align-items: flex-end;
+}
+
+.players-box {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 60vw;
+}
+
+.player-name {
+  font-size: 24pt;
+  margin-top: 10px;
+}
+.player-cards {
+  display: inline-flex;
+}
+.card {
+  margin-right: 10px;
+}
+
+.standings-jumbo {
+  width: 75vw;
+  background-color: #e9ecef;
+  margin: 200px auto 0px auto;
+}
+.standings-jumbo:first-child {
+  background: gold !important;
+}
+.standings-div {
+  display: flex;
+  align-content: center;
+  margin-bottom: 30px;
+}
+.standing-logo {
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  margin: 0 auto;
+}
+.ranking{
+  float: left;
+  align-self: center;
+  font-size: 52pt;
+}
+
+
+
+.edit-jumbotron {
+  display: flex;
+  width: 65vw;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 15vh;
+}
+
+.edit-team {
+  height: 400px;
+}
+
+.edit-team-welcome {
+  align-self: center !important;
   display: flex;
   flex-direction: column;
+}
+.team-div {
+}
+ul.nav-tabs:first-of-type{
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  background-image: url("http://img.timeinc.net/time/wp/interactives/apps/flag_colors/data/images/normal/us.png");
+  background-size: 500px 300px;
+}
+ul.nav-tabs{
+  display: inline-block;
+  width: 500px;
+  height: 300px;
+  background-image: url("https://metab.ern-net.eu/wp-content/uploads/2018/12/european-union-hi.jpg");
+  background-size: 500px 300px;
+  margin: 0px 50px 100px 0px;
+}
+ul.nav-tabs.active{
+  border-bottom: 12px solid orange;
+}
+a.nav-link {
+  width: 500px;
+  height: 300px;
+  opacity: 0;
+}
+
+.region-text {
+  padding: 5vh;
+}
+
+.sponsors {
+  display:flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 15vh;
+  align-items: stretch;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.sponsors-image {
+}
+.sponsors-box {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+}
+.sponsor-text {
+  font-size: 16pt;
+}
+.btn {
+  align-self: baseline;
+  order: 99;
+  
+}
+.team-page {
+  margin: 0 auto;
+}
+/* footer */
+.footer {
+  margin-top: 100px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 13vh;
+  background-color: #e9ecef;
+  display: flex;
+
+}
+.footer-boxes {
+  width: 50%;
+  padding-top: 2vh;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-evenly;
+align-content: flex-end;
+}
+.rulebook {
+  height: 55px;
+  width: 50px;
+}
+.checklist { 
+  margin-top: 2px;
+  height: 50px;
+  width: 50px;
+}
+.footer-image-right {
+  height: 50px;
+  width: 50px;
+}
+.footer-image-discord {
+  height: 50px;
+  width: 50px;
+}
+.footer-image-twitter {
+  height: 65px;
+  width: 50px;
+}
+.footer-image-youtube {
+  height: 50px;
+  width: 50px;
+}
+.footer-image-twitch {
+  height: 45px;
+  width: 45px;
+}
+.content-box {
+  width: 20vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-holder {
+  align-self: center;
+  margin: 0 auto;
+}
+.tet {
+  display: flex;
+}
+.footer-text {
+  margin-top: 7px;
+}
+#f-top {
+  margin: 0 auto;
+}
+
+#fb-right {  
+  display: flex;
+}
+#fc-bottom {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#cb-left {
+}
+#cb-right {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#fi-left {}
+#fi-right {}
+
+#discord {}
+#twitch {}
+#twitter {}
+#youtube {}
+
+#s {
+  font-size: 1.0em;
 }
