@@ -12,6 +12,8 @@ import TeamList from './components/teams/team_list';
 import Hub from './components/hub';
 import Social from './components/social';
 import Sponsors from './components/sponsors';
+import Schedule from './components/schedule/schedule'
+import Footer from './components/footer'
 
 
 var config = {
@@ -60,11 +62,16 @@ class App extends Component {
 
       <div className="App">
        <main>
-          <Route path = "/" render={props => 
+          <Route path = "/" render={props =>
+          <div>
             <div className = "nav-bar">
               <Navigation />
             </div>
-            }
+             <Schedule />
+          </div>
+          }
+            // This needs to be it's own component eventually, named schedule
+            
             />
             <Route exact path = "/dashboard" component = { Landing } />
             <Route exact path = "/user/team" component = { TeamPage } />
@@ -78,35 +85,8 @@ class App extends Component {
 
 
        </main>
-       <Sponsors />
-        <footer className = "footer">
-            <div className = "footer-boxes">
-              <a href = "https://google.com">
-                <div className = "footer-content" id = "fc-bottom">
-                  <img className = "rulebook" src = './images/rulebook.png'/>
-                  <h3 className = "footer-text" id = "small">RULEBOOK</h3>
-                </div>
-              </a>
-              <a href = "/checklist">
-                <div className = "footer-content" id = "fc-bottom">
-                  <img className = "checklist" src = './images/checklist.png'/>
-                  <h3 className = "footer-text" id = "small">GAME DAY CHECKLIST</h3>
-                </div>
-              </a>
-            </div>
-            <div className = "footer-boxes" id = "fb-right">
-                <div className = "footer-content">
-                    <img className = "footer-image-right" src = './images/ccs2black.png'/>
-                    <h2 className = "footer-text">Connect with us!</h2>
-                </div>
-                <div className = "footer-content" id = "fc-right">
-                      <a href = "https://discordapp.com/invite/ccs"><img className = "footer-image-discord" src = './images/social/discord.png'/></a>
-                      <a href = "https://www.twitch.tv/ccsesports"><img className = "footer-image-twitch" src = './images/social/twitch.png'/></a>
-                      <a href = "https://twitter.com/CCSesports"><img className = "footer-image-twitter" src = './images/social/twitter.png'/></a>
-                      <a href = "https://www.youtube.com/ccsesports"><img className = "footer-image-youtube" src = './images/social/youtube.png'/></a>
-                </div>
-            </div>
-        </footer>
+      <Sponsors />
+      <Footer />
       </div>
     );
   }
