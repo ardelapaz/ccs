@@ -81,36 +81,30 @@ class App extends Component {
        <Sponsors />
         <footer className = "footer">
             <div className = "footer-boxes">
-              <div className = "footer-content" id = "fc-bottom">
-                <div className = "content-box">
+              <a href = "https://google.com">
+                <div className = "footer-content" id = "fc-bottom">
                   <img className = "rulebook" src = './images/rulebook.png'/>
-                  <h3 className = "footer-text" id = "s">RULEBOOK</h3>
+                  <h3 className = "footer-text" id = "small">RULEBOOK</h3>
                 </div>
-                <div className = "content-box">
+              </a>
+              <a href = "/checklist">
+                <div className = "footer-content" id = "fc-bottom">
                   <img className = "checklist" src = './images/checklist.png'/>
-                  <h3 className = "footer-text" id = "s">GAME DAY CHECKLIST</h3>
+                  <h3 className = "footer-text" id = "small">GAME DAY CHECKLIST</h3>
                 </div>
-              </div>
+              </a>
             </div>
             <div className = "footer-boxes" id = "fb-right">
-              <div className = "content-holder">
-                <div className = "footer-content" id = "f-top">
-                  <div className = "tet">
+                <div className = "footer-content">
                     <img className = "footer-image-right" src = './images/ccs2black.png'/>
                     <h2 className = "footer-text">Connect with us!</h2>
-                  </div>
                 </div>
-                <div className = "footer-content">
-                  <div className = "content-box" id = "cb-right">
-                    <img className = "footer-image-discord" src = './images/social/discord.png'/>
-                    <img className = "footer-image-twitch" src = './images/social/twitch.png'/>
-                    <img className = "footer-image-twitter" src = './images/social/twitter.png'/>
-                    <img className = "footer-image-youtube" src = './images/social/youtube.png'/>
-                  </div>
+                <div className = "footer-content" id = "fc-right">
+                      <a href = "https://discordapp.com/invite/ccs"><img className = "footer-image-discord" src = './images/social/discord.png'/></a>
+                      <a href = "https://www.twitch.tv/ccsesports"><img className = "footer-image-twitch" src = './images/social/twitch.png'/></a>
+                      <a href = "https://twitter.com/CCSesports"><img className = "footer-image-twitter" src = './images/social/twitter.png'/></a>
+                      <a href = "https://www.youtube.com/ccsesports"><img className = "footer-image-youtube" src = './images/social/youtube.png'/></a>
                 </div>
-                </div>
-              <div className = "footer-content">
-              </div>
             </div>
         </footer>
       </div>

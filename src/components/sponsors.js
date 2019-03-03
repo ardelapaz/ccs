@@ -9,14 +9,12 @@ class sponsors extends Component {
         return (
                 <div className = "sponsors">
                 <h2 className = "sponsor-text">Support the people who support us!</h2>
-                <img src = "../images/sponsors/line.png" alt = "Sponsors" className = "sponsors-line"/>
                     <div className = "sponsors-box">
                         <img src = "../images/sponsors/mapban.png" alt = "Sponsors" className = "sponsors-image"/>
                         <img src = "../images/sponsors/siegegg.png" alt = "Sponsors" className = "sponsors-image"/>
                         <img src = "../images/sponsors/strafe.png" alt = "Sponsors" className = "sponsors-image"/>
                         <img src = "../images/sponsors/origin_gg.png" alt = "Sponsors" className = "sponsors-image"/>
                     </div>
-                    <img src = "../images/sponsors/line.png" alt = "Sponsors" className = "sponsors-line"/>
                 </div>
         )
     }
