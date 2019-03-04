@@ -319,10 +319,10 @@ a.nav-link {
   width: 100%;
   align-items: stretch;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .sponsors-image {
-  height: 40px;
+  height: 60px;
 }
 .sponsor-text {
   display: inline-block;
@@ -472,4 +472,10 @@ justify-content: center;
   background-color: #262626;
   border: 1px solid #2C2F33;
   box-shadow: 4px 5px 40px 5px rgba(0,0,0,0.4);
+}
+.checklist-div {
+  width: 75vw;
+  height: 1000px;
+  background-color: #e9ecef;
+  margin: 0 auto;
 }
