@@ -43,21 +43,19 @@ text-decoration: none!important;
   height: 200px;
   width: 200px;
 }
-.nav-bar {
-  width: 100%;
-  height: 120px;
-}
+
 .navigation {
-  position: fixed;
+  position: relative;
   display: flex;
   align-items: center;
   top: 0;
   left: 0;
-  height: 120px;
+  height: 100px;
   width: 100%;
-  background-color: #e9ecef;
+  background-color: #ff7800;
   box-sizing: border-box;
-  z-index: 99;
+  box-shadow: inset 0px 0px 30px 10px rgba(0,0,0,0.2);
+  border-bottom: 1px solid black;
 }
 .navigation-container {
   display: flex;
@@ -313,19 +311,14 @@ a.nav-link {
 .sponsors {
   display:flex;
   flex-direction: column;
-  width: 75vw;
+  width: 100%;
   height: 15vh;
   align-items: stretch;
   margin: 0 auto;
-  margin-top: 200px;
   margin-bottom: 100px;
 }
 .sponsors-image {
-}
-.sponsors-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: inline-block;
 }
 .sponsor-text {
   display: inline-block;
@@ -334,7 +327,12 @@ a.nav-link {
   border-bottom: 2px solid #2C2F33;
   border-top: 2px solid #2C2F33;
   align-self: center;
+  margin-top: 200px;
 }
+.sponsors-box {
+  justify-content: space-around;
+}
+
 .btn {
   align-self: baseline;
   order: 99;
@@ -358,6 +356,7 @@ a.nav-link {
   display: flex;
   width: 50%;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .footer-content {
@@ -379,20 +378,20 @@ justify-content: space-evenly;
   width: 50px;
 }
 .footer-image-discord {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 .footer-image-twitter {
-  height: 55px;
-  width: 40px;
+  height: 35px;
+  width: 25px;
 }
 .footer-image-youtube {
-  height: 40px;
-  width: 40px;
+  height: 25px;
+  width: 25px;
 }
 .footer-image-twitch {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 .footer-text {
   font-size: 1.0em;
@@ -409,13 +408,12 @@ justify-content: space-evenly;
 justify-content: center;
 }
 #fc-right {
-  width: 12vw;
+  width: 10vw;
   align-items: center;
 }
 .schedule {
   position: relative;
-  display: flex;
-  height: 150px;
+  height: 250px;
 }
 .teeet {
   height: 75px;
@@ -426,17 +424,39 @@ justify-content: center;
   flex-direction: column;
   width: 20%;
   justify-content: space-evenly;
-  border: 2px solid black;
+  border: 1px solid black;
   align-items: center;
+  background-color: #e9ecef;
 }
 .t-box {
   display: flex;
   width: 280px;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 10px;
 }
 .b-box {
   display: flex;
   width: 280px;
   justify-content: space-evenly;
+}
+.schedule-button {
+  width: 100%;
+  background-color: #2C2F33 !important;
+  position: relative;
+  border-color: black !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+.tet {
+  display: flex;
+  width: 100%;
+}
+.show {
+  display: flex;
+  width: 100%;
+}
+.collapse {
+  display: flex;
+  width: 100%;
 }

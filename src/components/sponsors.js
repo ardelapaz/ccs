@@ -8,7 +8,6 @@ class sponsors extends Component {
     render() {
         return (
                 <div className = "sponsors">
-                <h2 className = "sponsor-text">Support the people who support us!</h2>
                     <div className = "sponsors-box">
                         <img src = "../images/sponsors/mapban.png" alt = "Sponsors" className = "sponsors-image"/>
                         <img src = "../images/sponsors/siegegg.png" alt = "Sponsors" className = "sponsors-image"/>

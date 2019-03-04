@@ -64,10 +64,8 @@ class App extends Component {
        <main>
           <Route path = "/" render={props =>
           <div>
-            <div className = "nav-bar">
               <Navigation />
-            </div>
-             <Schedule />
+              <Schedule />
           </div>
           }
             // This needs to be it's own component eventually, named schedule
@@ -85,6 +83,8 @@ class App extends Component {
 
 
        </main>
+      
+      <h2 className = "sponsor-text">Support the people who support us!</h2>
       <Sponsors />
       <Footer />
       </div>
