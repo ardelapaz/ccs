@@ -10,7 +10,7 @@ class footer extends Component {
         return (
             <footer className = "footer">
             <div className = "footer-boxes">
-              <a href = "https://google.com">
+              <a href = "https://docs.wixstatic.com/ugd/07ea38_a663b4a4c80e40c3a9b727361edd0b37.pdf">
                 <div className = "footer-content" id = "fc-bottom">
                   <img className = "rulebook" src = './images/rulebook.png'/>
                   <h3 className = "footer-text" id = "small">RULEBOOK</h3>

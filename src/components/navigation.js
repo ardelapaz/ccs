@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Sponsors from './sponsors';
+import Schedule from './schedule/schedule'
 
 class navigation extends Component {
     constructor(props) {
@@ -10,12 +10,12 @@ class navigation extends Component {
 
     render() {
         return (
-            <div>
+            <div className = "navigation-header">
             <nav className = "navigation">
                 <div className = "navigation-container">
                     <img src='../../images/ccs2black.png' alt="ccs" className = "nav-logo" id = "nav-logo"/>
                     <ul className = "nav-links">
-                        <li><a className = 'nav-link-header' href="/dashboard">Home</a></li>
+                        <li><a className = 'nav-link-header' href="/hub">Home</a></li>
                         <li><a className = 'nav-link-header' href="/user/team">My Team</a></li>
                         <li><a className = 'nav-link-header' href="/schedule">Schedule</a></li>
                         <li><a className = 'nav-link-header' href="/standings">Standings</a></li>
@@ -25,6 +25,7 @@ class navigation extends Component {
                     </ul>
                 </div>
             </nav>
+            <Schedule />
             </div>
         )
     }

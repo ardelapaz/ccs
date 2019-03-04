@@ -12,8 +12,9 @@ import TeamList from './components/teams/team_list';
 import Hub from './components/hub';
 import Social from './components/social';
 import Sponsors from './components/sponsors';
-import Schedule from './components/schedule/schedule'
-import Footer from './components/footer'
+import Schedule from './components/schedule/schedule';
+import Footer from './components/footer';
+import Support from './components/support';
 
 
 var config = {
@@ -59,14 +60,11 @@ class App extends Component {
 
   render() {
     return (
-
+      
       <div className="App">
        <main>
           <Route path = "/" render={props =>
-          <div>
               <Navigation />
-              <Schedule />
-          </div>
           }
             // This needs to be it's own component eventually, named schedule
             
@@ -78,13 +76,13 @@ class App extends Component {
             <Route exact path = "/standings" component = { Standings } />
             <Route exact path = "/user/support" component = { ManageTeam } />
             <Route exact path = "/hub" component = { Hub } />
-            <Route exact path = "/support" component = { Sponsors } />
+            <Route exact path = "/support" component = { Support } />
 
 
 
        </main>
       
-      <h2 className = "sponsor-text">Support the people who support us!</h2>
+      <h2 className = "sponsor-text">Support the people who support us</h2>
       <Sponsors />
       <Footer />
       </div>

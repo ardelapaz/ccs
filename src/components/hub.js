@@ -19,11 +19,16 @@ class Hub extends Component {
             <div className = "main-content">
                 <div className = "main-page" id = "centered">
                 <Jumbotron className = "edit-jumbotron">
-                    <img src="../images/teams/g2.png" alt = "G2" className = "edit-team"/>
+                    <img src="../images/teams/eu/g2.png" alt = "G2" className = "edit-team"/>
                     <div className = "edit-team-welcome">
-                        <li className = "welcome-text">WELCOME,  <a className = "test" href = "/user" >{this.state.name || "THE3RDWALKER"} </a> </li>
-                        <p className="lead">Your next game is against Cloud9 on 12/21/12</p>
-                        <p>Your team is currently 1st place, with a record of 10-2</p>
+                        <li className = "welcome-text">WELCOME,  <a className = "test" href = "/user" >{this.state.name || "THE3RDWALKER"} </a></li>
+                        <h5>Your team is currently 1st place, with a record of 10-2</h5>
+                        <h5>Your next game is against Cloud9 on 12/21/12</h5>
+                            <div className = "buttonss">
+                                <Button id = "hub-button">Submit schedule problem</Button>
+                                <Button id = "hub-button">Submit roster change</Button>
+                                <Button id = "hub-button">Submit Complaint</Button>
+                            </div>
                     </div>
                 </Jumbotron>
                 </div>

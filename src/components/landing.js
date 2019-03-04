@@ -23,24 +23,24 @@ class Landing extends Component {
                     <hr className="my-2" />
 
                     <div className = "scroll-menu">
-                        <img src="../images/teams/c9.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/regime.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/rise.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/c9.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/disrupt.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/regime.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/c9.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/rise.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/c9.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/regime.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/rise.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/c9.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/disrupt.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/regime.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/c9.png" alt = "C9" className = "ccs-login"/>
-                        <img src="../images/teams/rise.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/c9.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/regime.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/rise.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/c9.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/disrupt.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/regime.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/c9.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/rise.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/c9.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/regime.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/rise.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/c9.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/disrupt.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/regime.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/c9.png" alt = "C9" className = "ccs-login"/>
+                        <img src="../images/teams/na/rise.png" alt = "C9" className = "ccs-login"/>
                     </div>
-                    <img src="../images/teams/sin.png" alt = "C9" className = "my-team"/>
+                    <img src="../images/teams/na/sin.png" alt = "C9" className = "my-team"/>
                     <p>Your team is currently 1st place, with a record of 10-2</p>
                     <p className="lead">
                     <Button color="primary" href = "">Manage Team</Button>

@@ -7,7 +7,7 @@ class standings extends Component {
         super(props);
 
         this.state = {
-            teamName: ["../images/teams/c9.png", "../images/teams/disrupt.png", "../images/teams/regime.png", "../images/teams/g2.png", "../images/teams/sin.png", "../images/teams/c9.png", "../images/teams/disrupt.png", "../images/teams/regime.png", "../images/teams/g2.png", "../images/teams/sin.png"],
+            teamName: ["../images/teams/na/c9.png", "../images/teams/na/disrupt.png", "../images/teams/na/regime.png", "../images/teams/eu/g2.png", "../images/teams/na/sin.png", "../images/teams/na/c9.png", "../images/teams/na/disrupt.png", "../images/teams/na/regime.png", "../images/teams/eu/g2.png", "../images/teams/na/sin.png"],
             activeTab: '1'
         }
     }
@@ -22,7 +22,7 @@ class standings extends Component {
       }
     render() {
         return (            
-                <div className = "standings-jumbo">
+            <div className = "standings-jumbo">
                 <h1 className = "region-text">Select your region</h1>
                     <Nav tabs              
                         className = {classNames({ active: this.state.activeTab === '1'})}
@@ -42,8 +42,6 @@ class standings extends Component {
                      </Nav>
                         <TabContent activeTab = {this.state.activeTab}>
                             <TabPane tabId = "1">
-                                <Row>
-                                    <Col sm = "12">
                                         <Table>
                                              <thead>
                                                <tr>
@@ -71,8 +69,6 @@ class standings extends Component {
                                                 )}
                                              </tbody>
                                         </Table>
-                                    </Col>
-                                </Row>
                             </TabPane>
                         </TabContent>
                         <TabContent activeTab = {this.state.activeTab}>

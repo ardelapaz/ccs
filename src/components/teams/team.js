@@ -19,7 +19,7 @@ render() {
     return (
                 <div className = "team-info">
                     <div className = "picture-record">
-                        <img src="../../images/teams/regime.png" alt = "Regime" className = "team-logo"/>
+                        <img src="../../images/teams/na/regime.png" alt = "Regime" className = "team-logo"/>
                         <h2 className="record">7-4</h2>
                     </div>
                     <div className = "players-box">
