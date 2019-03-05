@@ -25,9 +25,9 @@ class Hub extends Component {
                         <h5>Your team is currently 1st place, with a record of 10-2</h5>
                         <h5>Your next game is against Cloud9 on 12/21/12</h5>
                             <div className = "buttonss">
-                                <Button id = "hub-button">Submit schedule problem</Button>
-                                <Button id = "hub-button">Submit roster change</Button>
-                                <Button id = "hub-button">Submit Complaint</Button>
+                                <Button id = "hub-button">My Team</Button>
+                                <Button id = "hub-button">Submit Feedback</Button>
+                                <Button id = "hub-button">Submit Game Files</Button>
                             </div>
                     </div>
                 </Jumbotron>

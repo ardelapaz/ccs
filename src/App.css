@@ -6,6 +6,9 @@ a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, ce
   background: 0 0;
   margin: 0;
 }
+ul {
+  list-style-position: inside;
+}
 .App {
   text-align: center;
   background-color: white;
@@ -241,6 +244,7 @@ a.test:hover {
   width: 75vw;
   background-color: #e9ecef;
   margin: 0px auto;
+  padding: 5px;
 }
 .standings-jumbo:first-child {
   background: gold !important;
@@ -478,4 +482,28 @@ justify-content: center;
   height: 1000px;
   background-color: #e9ecef;
   margin: 0 auto;
+}
+.support-container {
+  margin-top: 50px;
+}
+.support {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.support-text {
+  margin-top: 50px;
+  font-size: 1.2rem;
+}
+.support-bullets {
+  font-size: 1.2rem;
+}
+.support-image {
+  height: 100px;
+  width: 100px;
+  margin-bottom : 10px;
+}
+ul li.support-bullets {
+  padding: 15px;
 }
