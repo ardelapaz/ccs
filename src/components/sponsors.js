@@ -9,7 +9,7 @@ class sponsors extends Component {
         return (
                 <div className = "sponsors">
                     <img src = "../images/sponsors/mapban.png" alt = "Sponsors" className = "sponsors-image"/>
-                    <img src = "../images/sponsors/siegegg.png" alt = "Sponsors" className = "sponsors-image"/>
+                    <img src = "../images/sponsors/siegeGG.png" alt = "Sponsors" className = "sponsors-image"/>
                     <img src = "../images/sponsors/strafe.png" alt = "Sponsors" className = "sponsors-image"/>
                     <img src = "../images/sponsors/origin_gg.png" alt = "Sponsors" className = "sponsors-image"/>
                 </div>
