@@ -17,7 +17,8 @@ render () {
             <Button className = "schedule-button" onClick={this.toggle}>{this.state.collapse == false ? "VIEW SCHEDULE" : "HIDE SCHEDULE"}</Button>
                 <div className = "tet">
                     <Collapse isOpen={this.state.collapse}>
-                        <div className = "box">
+                        <div className = "box-container">
+                            <div className = "box">
                                 <div className = "t-box">
                                     <img className = "teeet" src="../images/teams/na/c9.png"/>
                                     <h4>Vs</h4>
@@ -82,6 +83,8 @@ render () {
 
                                 </div>
                             </div>
+
+                        </div>
                         </Collapse>
                     </div>
         </div>

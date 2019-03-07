@@ -68,17 +68,13 @@ a {
   align-items: center;
 }
 
-.nav-links a {
+.nav-links li {
   color: #2C2F33;
   font-size: 14pt;
   border-top: 1px solid #2C2F33;
   border-right: 1px solid #2C2F33;
   border-left: 1px solid #2C2F33;
   border-bottom: 5px solid #2C2F33;
-}
-
-
-.nav-link-header{
   text-decoration: none !important;
   margin: 10px;
   width: 100px;
@@ -116,7 +112,6 @@ nav ul li a:hover {
   height: 100px;
   width: 100px;
   transition: .3s;
-  float: left;
 }
 
 .nav-link{
@@ -458,6 +453,9 @@ justify-content: center;
 .tet {
   display: flex;
   width: 100%;
+}
+.box-container {
+  display: flex;
 }
 .show {
   display: flex;
