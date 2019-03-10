@@ -68,7 +68,19 @@ a {
   align-items: center;
 }
 
-.nav-links li {
+.nav-link-box {
+  color: #2C2F33;
+  font-size: 14pt;
+  border-top: 1px solid #2C2F33;
+  border-right: 1px solid #2C2F33;
+  border-left: 1px solid #2C2F33;
+  border-bottom: 1px solid #2C2F33;
+  text-decoration: none !important;
+  margin: 10px;
+  width: 100px;
+  background: white;
+}
+.nav-link-box-active {
   color: #2C2F33;
   font-size: 14pt;
   border-top: 1px solid #2C2F33;
@@ -97,7 +109,7 @@ a {
   height: 30px;
   
 }
-nav ul li a {
+.nav-link-header{
   display: block;
   border-bottom: 3px solid transparent;
   text-decoration: none;
