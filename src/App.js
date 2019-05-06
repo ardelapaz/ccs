@@ -16,6 +16,7 @@ import Schedule from './components/schedule/schedule';
 import Footer from './components/footer';
 import Support from './components/support';
 import Checklist from './components/checklist';
+import schedulePage from './components/schedule/schedulePage';
 
 
 var config = {
@@ -78,9 +79,8 @@ class App extends Component {
             <Route exact path = "/user/support" component = { ManageTeam } />
             <Route exact path = "/hub" component = { Hub } />
             <Route exact path = "/support" component = { Support } />
+            <Route exact path = "/schedule" component = { schedulePage } />
             <Route exact path = "/checklist" component = { Checklist } />
-
-
 
 
        </main>

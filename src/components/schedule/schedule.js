@@ -83,7 +83,6 @@ render () {
 
                                 </div>
                             </div>
-
                         </div>
                         </Collapse>
                     </div>

@@ -11,7 +11,6 @@ class navigation extends Component {
         this.toggle = this.toggle.bind(this);
     }
     toggle(e,tab) {
-        e.preventDefault();
         if (this.state.active !== tab) {
             switch(tab) {
                 case(1):
