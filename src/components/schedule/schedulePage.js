@@ -72,7 +72,7 @@ class schedulePage extends Component {
       }
     render() {
         const { activeIndex } = this.state;
-        const slides = items.map((item) => {
+        const slides_na = items.map((item) => {
             return (
               <CarouselItem
                 onExiting={this.onExiting}
@@ -83,9 +83,9 @@ class schedulePage extends Component {
                 <h1></h1>
               </div>
               <div className = "schedule-na">
+                          <h1>MONDAY</h1>
                                     <div className = "schedule-box">
                                         <div className = "schedule-top">
-                                            <p className = "schedule-time">Monday</p>
                                         </div>
                                         <div className = "schedule-content">
                                             <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
@@ -95,12 +95,10 @@ class schedulePage extends Component {
                                             <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
                                         </div>
                                         <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
                                         </div>
                                     </div>
                                     <div className = "schedule-box">
                                         <div className = "schedule-top">
-                                            <p className = "schedule-time">Tuesday</p>
                                         </div>
                                         <div className = "schedule-content">
                                             <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
@@ -110,12 +108,24 @@ class schedulePage extends Component {
                                             <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
                                         </div>
                                         <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
+                                        </div>
+                                    </div>
+                                        <h1>WEDNESDAY</h1>
+                                    <div className = "schedule-box">
+                                        <div className = "schedule-top">
+                                        </div>
+                                        <div className = "schedule-content">
+                                            <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
+                                                <h2 className = "schedule-team-name">CLOUD9</h2>
+                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
+                                                <h2 className = "schedule-team-name">REGIME</h2>
+                                            <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
+                                        </div>
+                                        <div className = "schedule-bottom">
                                         </div>
                                     </div>
                                     <div className = "schedule-box">
                                         <div className = "schedule-top">
-                                            <p className = "schedule-time">Wednesday</p>
                                         </div>
                                         <div className = "schedule-content">
                                             <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
@@ -125,12 +135,41 @@ class schedulePage extends Component {
                                             <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
                                         </div>
                                         <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
+                                        </div>
+                                    </div>
+                                </div>
+                <img className = "schedule-background" src={item.src} alt={item.altText} />
+                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+              </CarouselItem>
+            );
+          });
+          const slides_eu = items.map((item) => {
+            return (
+              <CarouselItem
+                onExiting={this.onExiting}
+                onExited={this.onExited}
+                key={item.src}
+              >
+              <div className = "margin">
+                <h1></h1>
+              </div>
+              <div className = "schedule-na">
+                          <h1>TUESDAY</h1>
+                                    <div className = "schedule-box">
+                                        <div className = "schedule-top">
+                                        </div>
+                                        <div className = "schedule-content">
+                                            <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
+                                                <h2 className = "schedule-team-name">CLOUD9</h2>
+                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
+                                                <h2 className = "schedule-team-name">REGIME</h2>
+                                            <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
+                                        </div>
+                                        <div className = "schedule-bottom">
                                         </div>
                                     </div>
                                     <div className = "schedule-box">
                                         <div className = "schedule-top">
-                                            <p className = "schedule-time">Thursday</p>
                                         </div>
                                         <div className = "schedule-content">
                                             <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
@@ -140,12 +179,24 @@ class schedulePage extends Component {
                                             <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
                                         </div>
                                         <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
+                                        </div>
+                                    </div>
+                                        <h1>THURSDAY</h1>
+                                    <div className = "schedule-box">
+                                        <div className = "schedule-top">
+                                        </div>
+                                        <div className = "schedule-content">
+                                            <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
+                                                <h2 className = "schedule-team-name">CLOUD9</h2>
+                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
+                                                <h2 className = "schedule-team-name">REGIME</h2>
+                                            <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
+                                        </div>
+                                        <div className = "schedule-bottom">
                                         </div>
                                     </div>
                                     <div className = "schedule-box">
                                         <div className = "schedule-top">
-                                            <p className = "schedule-time">Friday</p>
                                         </div>
                                         <div className = "schedule-content">
                                             <img src="../images/teams/na/c9.png" alt = "C9" className = "schedule-team-pic"/>
@@ -155,7 +206,6 @@ class schedulePage extends Component {
                                             <img src="../images/teams/na/Regime.png" alt = "Regime" className = "schedule-team-pic"/>
                                         </div>
                                         <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
                                         </div>
                                     </div>
                                 </div>
@@ -192,7 +242,7 @@ class schedulePage extends Component {
                                
                              >
                                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-                               {slides}
+                               {slides_na}
                                <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
                                <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
                             </Carousel>
@@ -200,87 +250,17 @@ class schedulePage extends Component {
                         </TabContent>
                         <TabContent activeTab = {this.state.activeTab}>
                             <TabPane tabId = "2">
-                                <Row>
-                                    <Col sm = "12">
-                                    <div className = "schedule-na">
-                                    <div className = "schedule-box">
-                                        <div className = "schedule-top">
-                                            <p className = "schedule-time">Monday</p>
-                                        </div>
-                                        <div className = "schedule-content">
-                                            <img src="../images/teams/eu/G2.png" alt = "C9" className = "schedule-team-pic"/>
-                                                <h2 className = "schedule-team-name">G2 ESPORTS</h2>
-                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
-                                                <h2 className = "schedule-team-name">TEAM EMPIRE</h2>
-                                            <img src="../images/teams/eu/team_empire.png" alt = "TEAM EMPIRE" className = "schedule-team-pic"/>
-                                        </div>
-                                        <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
-                                        </div>
-                                    </div>
-                                    <div className = "schedule-box">
-                                        <div className = "schedule-top">
-                                            <p className = "schedule-time">Tuesday</p>
-                                        </div>
-                                        <div className = "schedule-content">
-                                            <img src="../images/teams/eu/G2.png" alt = "C9" className = "schedule-team-pic"/>
-                                                <h2 className = "schedule-team-name">G2 ESPORTS</h2>
-                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
-                                                <h2 className = "schedule-team-name">TEAM EMPIRE</h2>
-                                            <img src="../images/teams/eu/team_empire.png" alt = "TEAM EMPIRE" className = "schedule-team-pic"/>
-                                        </div>
-                                        <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
-                                        </div>
-                                    </div>
-                                    <div className = "schedule-box">
-                                        <div className = "schedule-top">
-                                            <p className = "schedule-time">Wednesday</p>
-                                        </div>
-                                        <div className = "schedule-content">
-                                            <img src="../images/teams/eu/G2.png" alt = "C9" className = "schedule-team-pic"/>
-                                                <h2 className = "schedule-team-name">G2 ESPORTS</h2>
-                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
-                                                <h2 className = "schedule-team-name">TEAM EMPIRE</h2>
-                                            <img src="../images/teams/eu/team_empire.png" alt = "TEAM EMPIRE" className = "schedule-team-pic"/>
-                                        </div>
-                                        <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
-                                        </div>
-                                    </div>
-                                    <div className = "schedule-box">
-                                        <div className = "schedule-top">
-                                            <p className = "schedule-time">Thursday</p>
-                                        </div>
-                                        <div className = "schedule-content">
-                                            <img src="../images/teams/eu/G2.png" alt = "C9" className = "schedule-team-pic"/>
-                                                <h2 className = "schedule-team-name">G2 ESPORTS</h2>
-                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
-                                                <h2 className = "schedule-team-name">TEAM EMPIRE</h2>
-                                            <img src="../images/teams/eu/team_empire.png" alt = "TEAM EMPIRE" className = "schedule-team-pic"/>
-                                        </div>
-                                        <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
-                                        </div>
-                                    </div>
-                                    <div className = "schedule-box">
-                                        <div className = "schedule-top">
-                                            <p className = "schedule-time">Friday</p>
-                                        </div>
-                                        <div className = "schedule-content">
-                                            <img src="../images/teams/eu/G2.png" alt = "C9" className = "schedule-team-pic"/>
-                                                <h2 className = "schedule-team-name">G2 ESPORTS</h2>
-                                            <img src='../../images/ccs2black.png' alt="ccs" className = "schedule-vs" id = "nav-logo"/>
-                                                <h2 className = "schedule-team-name">TEAM EMPIRE</h2>
-                                            <img src="../images/teams/eu/team_empire.png" alt = "TEAM EMPIRE" className = "schedule-team-pic"/>
-                                        </div>
-                                        <div className = "schedule-bottom">
-                                            <p className = "schedule-time">4/17/19 @ 12:00 EST</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                    </Col>
-                                </Row>
+                            <Carousel
+                               activeIndex={activeIndex}
+                               next={this.next}
+                               previous={this.previous}
+                               
+                             >
+                               <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+                               {slides_eu}
+                               <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+                               <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                            </Carousel>
                             </TabPane>
                         </TabContent>
                 </div>

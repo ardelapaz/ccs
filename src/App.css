@@ -310,7 +310,7 @@ ul.nav-tabs{
   height: 300px;
   background-image: url("https://metab.ern-net.eu/wp-content/uploads/2018/12/european-union-hi.jpg");
   background-size: 500px 300px;
-  margin: 0px 50px 100px 0px;
+  margin: 0px 50px 50px 0px;
 }
 ul.nav-tabs.active{
   border-bottom: 12px solid #ff7800;
@@ -564,13 +564,15 @@ ul li.support-bullets {
 }
 
 .schedule-background {
-  width: 100%;
+  width: 100vw;  
   position: absolute;
-  top: -10vh;
+  top: -20vh;
   left: 0px;
   z-index: -1;
 }
-.carousel-indicators {
-  position: absolute;
-  top: 65vh;
+.carousel-inner {
+  outline: 2px solid black;
+  overflow: show!important;
+}
+.schedule-day {
 }
