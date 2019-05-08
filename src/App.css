@@ -17,7 +17,7 @@ ul {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   min-height: 100vh;
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 a {
   color: #2C2F33!important;
@@ -249,7 +249,7 @@ a.test:hover {
 
 .standings-jumbo {
   width: 75vw;
-  background-color: #e9ecef;
+  background-color: white;
   margin: 0px auto;
   padding: 5px;
 }
@@ -331,6 +331,7 @@ a.nav-link {
   align-items: stretch;
   margin: 0 auto;
   justify-content: space-evenly;
+  margin-bottom: 20vh;
 }
 .sponsors-image {
   height: 60px;
@@ -342,7 +343,7 @@ a.nav-link {
   border-bottom: 2px solid #2C2F33;
   border-top: 2px solid #2C2F33;
   align-self: center;
-  margin-top: 200px;
+  margin-top: 20vh;
 }
 .sponsors-box {
   justify-content: space-between;
@@ -515,4 +516,61 @@ justify-content: center;
 }
 ul li.support-bullets {
   padding: 15px;
+}
+
+/* Schedule Page */
+.schedule-na {
+}
+.schedule-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 10vh;
+  width: 50vw;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.schedule-team-pic {
+  height: 6vh;
+  width: 6vh;
+}
+.schedule-vs {
+  height: 50px;
+  width: 50px;
+}
+.schedule-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.schedule-top {
+  height: 2vh;
+  background-color: #ff7800;
+}
+.schedule-bottom {
+  height: 2vh;
+  background-color: black;
+}
+.schedule-time {
+  margin: 0;
+  height: 1vh;
+  font-size: .8rem;
+  color: white;
+}
+.schedule-team-name {
+  font-size: 1.9rem;
+}
+
+.schedule-background {
+  width: 100%;
+  position: absolute;
+  top: -10vh;
+  left: 0px;
+  z-index: -1;
+}
+.carousel-indicators {
+  position: absolute;
+  top: 65vh;
 }
