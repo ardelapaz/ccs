@@ -41,21 +41,22 @@ class navigation extends Component {
     render() {
         return (
             <div className = "navigation-header">
-            <nav className = "navigation">
                 <div className = "navigation-container">
+                    <div className = "stripe-box">
+                        <img src='../../images/stripe-left.png' className = "stripes" id = "stripe-left"/>
+                    </div>
                     <ul className = "nav-links">
-                        <li onClick = { (e) => this.toggle(e, 1)} className = {this.state.activeTab === "Home" ? 'nav-link-box-active' : 'nav-link-box'}><a  href= "/hub">Home</a></li>
+
+                        <a href = "/hub" className = "main-image"><img src='../../images/ccs.png' href = "/hub" alt="ccs" className = "nav-logo" id = "nav-logo"/></a>
                         <li onClick = { (e) => this.toggle(e, 2)} className = {this.state.activeTab === "Schedule" ? 'nav-link-box-active' : 'nav-link-box'}><a className = 'nav-link-header' href="/schedule">Schedule</a></li>
                         <li onClick = { (e) => this.toggle(e, 3)} className = {this.state.activeTab === "Standings" ? 'nav-link-box-active' : 'nav-link-box'}><a className = 'nav-link-header' href="/standings">Standings</a></li>
-
-                        <img src='../../images/ccs2black.png' alt="ccs" className = "nav-logo" id = "nav-logo"/>
-                        
-                        <li onClick = { (e) => this.toggle(e, 4)} className = {this.state.activeTab === "Profile" ? 'nav-link-box-active' : 'nav-link-box'}><a className = 'nav-link-header' href="/profile">Profile</a></li>
                         <li onClick = { (e) => this.toggle(e, 5)} className = {this.state.activeTab === "My Team" ? 'nav-link-box-active' : 'nav-link-box'}><a className = 'nav-link-header' href="/user/team">My Team</a></li>
                         <li onClick = { (e) => this.toggle(e, 6)} className = {this.state.activeTab === "Support" ? 'nav-link-box-active' : 'nav-link-box'}><a className = 'nav-link-header' href="/support">Support</a></li>
                     </ul>
+                    <div className = "stripe-box">
+                        <img src='../../images/stripe-right.png' className = "stripes" id = "stripe-left"/>
+                    </div>                
                 </div>
-            </nav>
             <Schedule />
             </div>
         )

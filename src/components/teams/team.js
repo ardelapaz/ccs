@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Card, CardImg, CardTitle } from 'reactstrap';
+import { Jumbotron, Button, Card, CardImg, CardTitle } from 'reactstrap';
 
 class Team extends Component {
 constructor(props) {
@@ -23,7 +23,7 @@ render() {
                         <h2 className="record">7-4</h2>
                     </div>
                     <div className = "players-box">
-                        <h1 className = "team-name">REGIME</h1>
+                        <h1 className = "team-name" id = "team-name">REGIME</h1>
                         <div className = "player-cards">
                             <Card className = "card">
                                 <CardImg top width="100%" src="../../images/players/player.png" alt="Player1" />
@@ -46,6 +46,7 @@ render() {
                                 <CardTitle className = "player-name">Player1</CardTitle>
                             </Card>
                         </div>
+                        <Button className = "btn btn-danger" id = "edit" href = "/user/support">Edit Team</Button>
                     </div>
                 </div>
     )

@@ -14,7 +14,7 @@ class Schedule extends Component {
 render () {
     return (
         <div className = "schedule">
-            <Button className = "schedule-button" onClick={this.toggle}>{this.state.collapse == false ? "VIEW SCHEDULE" : "HIDE SCHEDULE"}</Button>
+            <Button className = "schedule-button" onClick={this.toggle}>{this.state.collapse == false ? "SCHEDULE" : "HIDE"}</Button>
                 <div className = "tet">
                     <Collapse isOpen={this.state.collapse}>
                         <div className = "box-container">

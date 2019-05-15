@@ -12,7 +12,6 @@ class TeamView extends Component {
         return(
         <div>
             <Jumbotron className = "team-jumbo">
-                <Button className = "btn btn-danger" href = "/user/support">Edit Team</Button>
                 <Team/>
             </Jumbotron>
         </div>

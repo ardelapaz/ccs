@@ -29,10 +29,10 @@ class footer extends Component {
                     <h2 className = "footer-text">Connect with us!</h2>
                 </div>
                 <div className = "footer-content" id = "fc-right">
-                    <a href = "https://discordapp.com/invite/ccs"><img className = "footer-image-discord" src = './images/social/discord.png'/></a>
-                    <a href = "https://www.twitch.tv/ccsesports"><img className = "footer-image-twitch" src = './images/social/twitch.png'/></a>
-                    <a href = "https://twitter.com/CCSesports"><img className = "footer-image-twitter" src = './images/social/twitter.png'/></a>
-                    <a href = "https://www.youtube.com/ccsesports"><img className = "footer-image-youtube" src = './images/social/youtube.png'/></a>
+                    <a className = "footer-social" href = "https://discordapp.com/invite/ccs"><img className = "footer-image-discord" src = './images/social/discord.png'/></a>
+                    <a className = "footer-social" href = "https://www.twitch.tv/ccsesports"><img className = "footer-image-twitch" src = './images/social/twitch.png'/></a>
+                    <a className = "footer-social" href = "https://twitter.com/CCSesports"><img className = "footer-image-twitter" src = './images/social/twitter.png'/></a>
+                    <a className = "footer-social" href = "https://www.youtube.com/ccsesports"><img className = "footer-image-youtube" src = './images/social/youtube.png'/></a>
                 </div>
             </div>
         </footer>
