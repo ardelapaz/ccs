@@ -4,9 +4,8 @@ import * as firebase from 'firebase';
 import './App.css';
 import Login from './components/login';
 import Navigation from './components/navigation';
-import Landing from './components/landing';
-import TeamPage from './components/teams/team_page';
-import ManageTeam from './components/teams/manage_team';
+import Dashboard from './components/dashboard';
+import Team from './components/teams/team';
 import Standings from './components/standings';
 import TeamList from './components/teams/team_list';
 import Hub from './components/hub';
@@ -16,6 +15,9 @@ import Schedule from './components/schedule/schedule';
 import Footer from './components/footer';
 import Support from './components/support';
 import Checklist from './components/checklist';
+import schedulePage from './components/schedule/schedulePage';
+import Register from './components/register';
+import {withRouter} from 'react-router-dom';
 
 
 var config = {
@@ -59,42 +61,35 @@ class App extends Component {
       }.bind(this));
   }
 
+
+
   render() {
-    return (
-      
-      <div className="App">
+    let render;
+    if (this.state.user != null) {
+     render = 
+     <div className="App">
        <main>
-          <Route path = "/" render={props =>
-              <Navigation />
-          }
-            // This needs to be it's own component eventually, named schedule
-            
-            />
-            <Route exact path = "/dashboard" component = { Landing } />
-            <Route exact path = "/user/team" component = { TeamPage } />
-            <Route exact path = "/teams" component = { TeamList } />
-            <Route exact path = "/login" component = { Login } />
-            <Route exact path = "/standings" component = { Standings } />
-            <Route exact path = "/user/support" component = { ManageTeam } />
-            <Route exact path = "/hub" component = { Hub } />
-            <Route exact path = "/support" component = { Support } />
-            <Route exact path = "/checklist" component = { Checklist } />
-
-
-
-
+       <Navigation />
+         <Route exact path = "/" component = { Hub } />
+          <Route exact path = "/dashboard" component = { Dashboard } />
+          <Route exact path = "/team" component = { Team } />
+          <Route exact path = "/teams" component = { TeamList } />
+          <Route exact path = "/login" component = { Login } />
+          <Route exact path = "/standings" component = { Standings } />
+          <Route exact path = "/support" component = { Support } />
+          <Route exact path = "/schedule" component = { schedulePage } />
+          <Route exact path = "/checklist" component = { Checklist } />
        </main>
-      
-      <h2 className = "sponsor-text">Support the people who support us</h2>
-      <Sponsors />
-      <Footer />
       </div>
+    } else {
+        render = this.props.location.pathname = '/register' ? <Register /> : <Login />;
+    }
+    return (
+        <div>
+          {render}
+          <Footer />
+        </div>
     );
   }
-}
-
-{ /* <div id ='vert-centered'> 
-              { /* <Login /> */
-              
-             /* </div> */ }
+} 
 export default App;

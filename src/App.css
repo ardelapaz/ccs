@@ -1,4 +1,4 @@
-a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var {
+a, abbr, acronym, address, applet, b, big, blockquote, body, button, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, title, tr, tt, u, ul, var h1, h2, h3, h4, h5 {
   padding: 0;
   border: 0;
   outline: 0;
@@ -17,7 +17,12 @@ ul {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   min-height: 100%;
-  margin-top: 25vh;
+  position: relative;
+  margin-bottom: 15vh;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
 }
 a {
   color: #2C2F33!important;
@@ -35,50 +40,81 @@ a {
 
 .login {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
 }
 .form {
-  margin: auto;
-  width: 40vw;
+  width: 50vw;
 }
+.login-button {
+  margin-bottom: 1vh;
+  background-color: #2C2F33!important;
+}
+
+.register {
+  color: white!important;
+}
+
 .ccs-login{
   height: 200px;
   width: 200px;
 }
+.form-control {
+  margin-bottom: 10px;
+}
 .navigation-header {
-  position: fixed;
+  position: relative;
+  background-color: white;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
 }
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff7800;
-  box-shadow: inset 0px 0px 30px 10px rgba(0,0,0,0.2);
-  border-bottom: 1px solid #2C2F33;
-}
+
 .navigation-container {
   display: flex;
-  margin: 0 auto;
-  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
+.stripes {
+  height: 14vh;
+}
+.main-image {
+  justify-self: center!important;
+}
+/* #stripe-left {
+position: fixed;
+top: 0;
+left:1vw;
+}
+#stripe-right {
+  position: fixed;
+  top: 0;
+  right: 3vw;
+} */
 
-.nav-links li {
+.nav-link-box {
   color: #2C2F33;
-  font-size: 14pt;
-  border-top: 1px solid #2C2F33;
-  border-right: 1px solid #2C2F33;
-  border-left: 1px solid #2C2F33;
-  border-bottom: 5px solid #2C2F33;
+  font-size: 13pt;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
   text-decoration: none !important;
-  margin: 10px;
-  width: 100px;
-  background: white;
+  background: #e9ecef;
+  margin: 15px;
+}
+.nav-link-box-active {
+  color: #2C2F33;
+  font-size: 13pt;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  text-decoration: none !important;
+  background: #e9ecef;
+  margin: 15px;
+}
+.nav-link-header {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .nav-social {
@@ -89,17 +125,25 @@ a {
   position: absolute;
   right: 0;
 }
-
+.nav-links {
+  display: flex;
+  margin: 0 auto!important;
+  height: 14vh;
+  align-items: center!important;
+}
+.stripe-box{ 
+}
+.main-image {
+  float: left;
+  align-self:flex-start;
+}
 
 .nav-links li {
   display: inline-block;
   list-style-type: none;
-  height: 30px;
-  
 }
-nav ul li a {
+.nav-link-header{
   display: block;
-  border-bottom: 3px solid transparent;
   text-decoration: none;
   text-transform: uppercase;
   transition: .1.5s;
@@ -109,13 +153,14 @@ nav ul li a:hover {
 }
 
 .nav-logo {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   transition: .3s;
 }
 
 .nav-link{
   align-self: flex-end;
+  margin-left: 20px;
   float: right;
 }
 
@@ -183,15 +228,6 @@ a.test:hover {
   width: 30px;
 }
 
-/* Team page */
-.team-jumbo {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-right: auto;
-  margin-left: auto;
-  height: 700px;
-  width: 85vw;
-}
 .team-logo {
   height: 400px;
   width: 400px;
@@ -220,8 +256,12 @@ a.test:hover {
 
 .players-box {
   margin: 0 auto;
-  min-width: 1000px;
-  max-width: 60vw;
+  width: 60vw;
+}
+#team-name {
+}
+#edit {
+  margin-top: 50px;
 }
 
 .player-name {
@@ -237,7 +277,7 @@ a.test:hover {
 
 .standings-jumbo {
   width: 75vw;
-  background-color: #e9ecef;
+  background-color: white;
   margin: 0px auto;
   padding: 5px;
 }
@@ -268,10 +308,11 @@ a.test:hover {
 }
 
 
-.edit-jumbotron {
+.page-jumbo {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  margin-top: 10vh;
 }
 
 .edit-team {
@@ -287,18 +328,16 @@ a.test:hover {
 
 ul.nav-tabs:first-of-type{
   display: inline-block;
-  width: 500px;
-  height: 300px;
-  background-image: url("http://img.timeinc.net/time/wp/interactives/apps/flag_colors/data/images/normal/us.png");
-  background-size: 500px 300px;
+}
+.eu-flag {
+  height: 200px;
+}
+.na-flag {
+  height: 200px;
 }
 ul.nav-tabs{
   display: inline-block;
-  width: 500px;
-  height: 300px;
-  background-image: url("https://metab.ern-net.eu/wp-content/uploads/2018/12/european-union-hi.jpg");
-  background-size: 500px 300px;
-  margin: 0px 50px 100px 0px;
+  margin: 0px 100px 50px 0px;
 }
 ul.nav-tabs.active{
   border-bottom: 12px solid #ff7800;
@@ -310,7 +349,7 @@ a.nav-link {
 }
 
 .region-text {
-  padding: 5vh;
+  padding: 2vh;
 }
 
 .sponsors {
@@ -319,6 +358,7 @@ a.nav-link {
   align-items: stretch;
   margin: 0 auto;
   justify-content: space-evenly;
+  margin-bottom: 20vh;
 }
 .sponsors-image {
   height: 60px;
@@ -330,7 +370,7 @@ a.nav-link {
   border-bottom: 2px solid #2C2F33;
   border-top: 2px solid #2C2F33;
   align-self: center;
-  margin-top: 200px;
+  margin-top: 20vh;
 }
 .sponsors-box {
   justify-content: space-between;
@@ -346,39 +386,46 @@ a.nav-link {
 }
 /* footer */
 .footer {
-  margin-top: 100px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
   position: relative;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 6vh;
   background-color: #e9ecef;
   display: flex;
-
 }
 .footer-boxes {
   display: flex;
-  width: 50%;
+  width: 33%;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .footer-content {
 display: flex;
+width: 100%;
 align-items: center;
 justify-content: space-evenly;
 }
+#footer-exception {
+  justify-content: center!important;
+}
 .rulebook {
-  height: 55px;
-  width: 50px;
+  height: 6vh;
+  width: 6vh;
 }
 .checklist { 
   margin-top: 2px;
-  height: 50px;
-  width: 50px;
+  height: 6vh;
+  width: 6vh;
 }
 .footer-image-right {
-  height: 50px;
-  width: 50px;
+  height: 5vh;
+  width: 5vh;
+  margin: 0px 5px 0px 5px;
 }
 .footer-image-discord {
   height: 30px;
@@ -400,6 +447,9 @@ justify-content: space-evenly;
   font-size: 1.0em;
   margin: 0;
 }
+.footer-social {
+  margin-left: 20px;
+}
 #fc-bottom {
   display: flex;
   justify-content: center;
@@ -411,11 +461,9 @@ justify-content: space-evenly;
 justify-content: center;
 }
 #fc-right {
-  width: 10vw;
   align-items: center;
 }
 .schedule {
-  position: relative;
 }
 .teeet {
   height: 75px;
@@ -424,47 +472,47 @@ justify-content: center;
 .box {
   display: flex;
   flex-direction: column;
-  width: 20%;
   justify-content: space-evenly;
   border: 1px solid #2C2F33;
-  align-items: center;
-  background-color: #e9ecef;
+  background-color: white;
+  width: 20vw;
 }
 .t-box {
   display: flex;
-  width: 280px;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5px;
 }
+
 .b-box {
   display: flex;
-  width: 280px;
   justify-content: space-evenly;
 }
+
 .schedule-button {
   width: 100%;
   background-color: #2C2F33 !important;
   position: relative;
+  text-align: center;
   border-color: #2C2F33 !important;
   border-radius: 0 !important;
   padding: 0 !important;
 }
+
 .tet {
   display: flex;
   width: 100%;
 }
+
+.collapse {
+  width: 100%;
+}
+.show {}
+
 .box-container {
   display: flex;
 }
-.show {
-  display: flex;
-  width: 100%;
-}
-.collapse {
-  display: flex;
-  width: 100%;
-}
+
 .buttonss {
   display: flex;
   justify-content: space-around;
@@ -504,4 +552,73 @@ justify-content: center;
 }
 ul li.support-bullets {
   padding: 15px;
+}
+
+/* Schedule Page */
+.schedule-na {
+  background-color: transparent!important;
+  background: transparent!important;
+
+}
+.schedule-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 10vh;
+  width: 50vw;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.schedule-team-pic {
+  height: 6vh;
+  width: 6vh;
+}
+.schedule-vs {
+  height: 50px;
+  width: 50px;
+}
+.schedule-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+.schedule-top {
+  height: 2vh;
+  background-color: #ff7800;
+}
+.schedule-bottom {
+  height: 2vh;
+  background-color: black;
+}
+.schedule-time {
+  margin: 0;
+  height: 1vh;
+  font-size: .8rem;
+  color: white;
+}
+.schedule-team-name {
+  font-size: 1.9rem;
+}
+
+.schedule-background {
+  width: 100vw;  
+  position: absolute;
+  top: 0vh;
+  left: 0px;
+}
+.carousel-inner {
+  background-color: transparent!important;
+  background: transparent!important;
+  outline: 2px solid black;
+  overflow: show!important;
+}
+.schedule-day {
+}
+
+.carosel-item {
+  background-color: transparent;
+  background: transparent!important;
+
 }

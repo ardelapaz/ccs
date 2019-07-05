@@ -14,7 +14,7 @@ class Schedule extends Component {
 render () {
     return (
         <div className = "schedule">
-            <Button className = "schedule-button" onClick={this.toggle}>{this.state.collapse == false ? "VIEW SCHEDULE" : "HIDE SCHEDULE"}</Button>
+            <Button className = "schedule-button" onClick={this.toggle}>{this.state.collapse == false ? "SCHEDULE" : "HIDE"}</Button>
                 <div className = "tet">
                     <Collapse isOpen={this.state.collapse}>
                         <div className = "box-container">
@@ -24,11 +24,12 @@ render () {
                                     <h4>Vs</h4>
                                     <img className = "teeet" src="../images/teams/na/sin.png"/>
                                 </div>
-                                <div className = "b-box">
-                                    <h2 className = "team1-s">2</h2>
-                                    <br></br>
-                                    <h2 className = "team1-s">2</h2>
-
+                            </div>
+                        <div className = "box">
+                                <div className = "t-box">
+                                    <img className = "teeet" src="../images/teams/na/c9.png"/>
+                                    <h4>Vs</h4>
+                                    <img className = "teeet" src="../images/teams/na/sin.png"/>
                                 </div>
                             </div>
                         <div className = "box">
@@ -37,11 +38,12 @@ render () {
                                     <h4>Vs</h4>
                                     <img className = "teeet" src="../images/teams/na/sin.png"/>
                                 </div>
-                                <div className = "b-box">
-                                    <h2 className = "team1-s">2</h2>
-                                    <br></br>
-                                    <h2 className = "team1-s">2</h2>
-
+                            </div>
+                        <div className = "box">
+                                <div className = "t-box">
+                                    <img className = "teeet" src="../images/teams/na/c9.png"/>
+                                    <h4>Vs</h4>
+                                    <img className = "teeet" src="../images/teams/na/sin.png"/>
                                 </div>
                             </div>
                         <div className = "box">
@@ -50,40 +52,7 @@ render () {
                                     <h4>Vs</h4>
                                     <img className = "teeet" src="../images/teams/na/sin.png"/>
                                 </div>
-                                <div className = "b-box">
-                                    <h2 className = "team1-s">2</h2>
-                                    <br></br>
-                                    <h2 className = "team1-s">2</h2>
-
-                                </div>
                             </div>
-                        <div className = "box">
-                                <div className = "t-box">
-                                    <img className = "teeet" src="../images/teams/na/c9.png"/>
-                                    <h4>Vs</h4>
-                                    <img className = "teeet" src="../images/teams/na/sin.png"/>
-                                </div>
-                                <div className = "b-box">
-                                    <h2 className = "team1-s">2</h2>
-                                    <br></br>
-                                    <h2 className = "team1-s">2</h2>
-
-                                </div>
-                            </div>
-                        <div className = "box">
-                                <div className = "t-box">
-                                    <img className = "teeet" src="../images/teams/na/c9.png"/>
-                                    <h4>Vs</h4>
-                                    <img className = "teeet" src="../images/teams/na/sin.png"/>
-                                </div>
-                                <div className = "b-box">
-                                    <h2 className = "team1-s">2</h2>
-                                    <br></br>
-                                    <h2 className = "team1-s">2</h2>
-
-                                </div>
-                            </div>
-
                         </div>
                         </Collapse>
                     </div>

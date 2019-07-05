@@ -22,23 +22,17 @@ class standings extends Component {
       }
     render() {
         return (            
-            <div className = "standings-jumbo">
+            <div className = "schedule-page">
                 <h1 className = "region-text">Select your region</h1>
-                    <Nav tabs              
+                <Nav tabs              
                         className = {classNames({ active: this.state.activeTab === '1'})}
                         onClick = {() => { this.toggle('1'); }}>
-                        <NavItem>
-                            <NavLink> 
-                            </NavLink>
-                        </NavItem>
+                        <img src="../images/flags/us.png" className = "na-flag"/>
                      </Nav>
                      <Nav tabs
                         className = {classNames({ active: this.state.activeTab === '2'})}
                         onClick = {() => { this.toggle('2'); }}>
-                        <NavItem>
-                            <NavLink> 
-                            </NavLink>
-                        </NavItem>
+                         <img src="../images/flags/eu.jpg" className = "eu-flag"/>
                      </Nav>
                         <TabContent activeTab = {this.state.activeTab}>
                             <TabPane tabId = "1">

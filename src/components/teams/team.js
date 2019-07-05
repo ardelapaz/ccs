@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Card, CardImg, CardTitle } from 'reactstrap';
+import { Button, Card, CardImg, CardTitle, Jumbotron } from 'reactstrap';
 
 class Team extends Component {
 constructor(props) {
@@ -17,6 +17,7 @@ getteaminfo() {
 
 render() {
     return (
+            <Jumbotron className = "page-jumbo">
                 <div className = "team-info">
                     <div className = "picture-record">
                         <img src="../../images/teams/na/regime.png" alt = "Regime" className = "team-logo"/>
@@ -46,8 +47,10 @@ render() {
                                 <CardTitle className = "player-name">Player1</CardTitle>
                             </Card>
                         </div>
+                        <Button className = "btn btn-danger" href = "/user/support">Edit Team</Button>
                     </div>
                 </div>
+                </Jumbotron>
     )
 }
 

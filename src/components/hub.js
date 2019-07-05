@@ -18,7 +18,7 @@ class Hub extends Component {
         return (
             <div className = "main-content">
                 <div className = "main-page" id = "centered">
-                <Jumbotron className = "edit-jumbotron">
+                <Jumbotron className = "page-jumbo">
                     <img src="../images/teams/eu/g2.png" alt = "G2" className = "edit-team"/>
                     <div className = "edit-team-welcome">
                         <li className = "welcome-text">WELCOME,  <a className = "test" href = "/user" >{this.state.name || "THE3RDWALKER"} </a></li>

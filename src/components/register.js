@@ -1,26 +1,17 @@
-import React, { Component } from 'react';
-import { Redirect } from 'react-dom';
+import  React, { Component } from 'react';
 import * as firebase from 'firebase';
+import { Route, Link } from 'react-router-dom';
 import { Button, Form, Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 
-
-
-class Login extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            email: '',
-            password: '',
-            user: null,
-            modal: false
-        }
-
-        this.handleChange = this.handleChange.bind(this);
-        this.authListener = this.authListener.bind(this);
+class Register extends Component {
+constructor(props) {
+    super(props);
+    this.state = {
+        user: null
+    }
+    this.authListener = this.authListener.bind(this);
 }
-
 
 componentDidMount() {
     this.authListener();
@@ -58,24 +49,21 @@ toggle() {
       modal: !prevState.modal
     }));
   }
-    
-
 
     render() {
-        return this.state.user ? (
-        <Button href = "/dashboard">Click me</Button>) : (
-            <div className = "login" id="centered">
-                <Form className = "form">
+        return(
+            <div className = "login">
+            <Form className = "form">
                     <img src="../images/ccs.png" alt = "CCS" className = "ccs-login"/>
+                    <h1>Create an account</h1>
                         <Input type="email" placeholder="Email" class="border-bottom border-danger" onChange = {this.handleChange}/>
                         <Input type="password" placeholder="Password" onChange = {this.handleChange}/>
-                        <Button className = "login-button" type="submit" onClick={this.onSubmit.bind(this)}>Log in</Button>
-                        <br/>
-                        <Button className = "login-button" type="submit" onClick={this.toggle.bind(this)}><a className = "register" href = "/register">Create an account</a></Button>
+                        <Input type="text" placeholder="Discord#XXXX" class="border-bottom border-danger" onChange = {this.handleChange}/>
+                        <Button className = "login-button" type="submit" onClick={this.onSubmit.bind(this)}>Create Account</Button>
                 </Form>
             </div>
-        );
+        )
     }
 }
 
-export default Login;
+export default Register;
