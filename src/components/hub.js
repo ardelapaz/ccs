@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Container, Button } from 'reactstrap';
 import Team from '../components/teams/team';
-import Sponsors from '../components/sponsors'
+import Schedule from '../components/schedule/schedule'
 
 class Hub extends Component {
     constructor(props) {
@@ -31,7 +31,9 @@ class Hub extends Component {
                             </div>
                     </div>
                 </Jumbotron>
+                <Schedule />
                 </div>
+
             </div>
         )
     }

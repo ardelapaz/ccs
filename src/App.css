@@ -16,7 +16,7 @@ ul {
   margin: 0;
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
-  min-height: 100%;
+  min-height: 79vh;
   position: relative;
   margin-bottom: 15vh;
 }
@@ -66,56 +66,57 @@ a {
   margin-bottom: 10px;
 }
 .navigation-header {
-  position: relative;
-  background-color: white;
-  top: 0;
-  left: 0;
+  display: flex;
+  height: 130px;
   width: 100%;
-  z-index: 99;
+  align-items: center;
+  border-bottom: 2px solid black;
+  background-color: rgb(241, 241, 241); 
 }
 
-.navigation-container {
-  display: flex;
+.background {
   width: 100%;
-  justify-content: center;
+  height: 150px;
+  opacity: .8;
+  border-bottom: 4px solid black;
 }
-.stripes {
-  height: 14vh;
-}
+
+
 .main-image {
-  justify-self: center!important;
+  align-items: center;
+  
 }
-/* #stripe-left {
-position: fixed;
-top: 0;
-left:1vw;
-}
-#stripe-right {
-  position: fixed;
-  top: 0;
-  right: 3vw;
-} */
 
 .nav-link-box {
-  color: #2C2F33;
-  font-size: 13pt;
-  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  font-size: 10pt;
   text-decoration: none !important;
-  background: #e9ecef;
-  margin: 15px;
+  width: 150px;
+  border-bottom: 3px solid transparent;
+  background-color: #2C2F33;
+  height: 30px;
+  margin-left: 2vw;
 }
-.nav-link-box-active {
-  color: #2C2F33;
-  font-size: 13pt;
-  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
-  text-decoration: none !important;
-  background: #e9ecef;
-  margin: 15px;
-}
+
 .nav-link-header {
-  margin-left: 15px;
-  margin-right: 15px;
+  font-family: 'Muli', sans-serif;
+  color: white;
+  opacity: 1!important;
+  margin-bottom: 0;
+  border: 3px solid black;
+  align-items: center!important;
+  height: 100%;
 }
+.nav-link-box:hover {
+  border-bottom:3px solid orange;
+}
+a.nav-link-header {
+  color:white!important;
+}
+.title {
+  font-size: 20pt;
+}
+
+
 
 .nav-social {
   float: right;
@@ -125,22 +126,23 @@ left:1vw;
   position: absolute;
   right: 0;
 }
+.nav-links-box {
+  display: flex;
+  opacity: 1!important;
+}
 .nav-links {
   display: flex;
-  margin: 0 auto!important;
-  height: 14vh;
   align-items: center!important;
-}
-.stripe-box{ 
-}
-.main-image {
-  float: left;
-  align-self:flex-start;
+  list-style-type: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: 0;
+  background-color: transparent;
+  position: absolute;
+  left: 10vw;
 }
 
-.nav-links li {
-  display: inline-block;
-  list-style-type: none;
+.main-image {
+  float: left;
 }
 .nav-link-header{
   display: block;
@@ -148,9 +150,7 @@ left:1vw;
   text-transform: uppercase;
   transition: .1.5s;
 }
-nav ul li a:hover {
-  color: #ff7800 !important;
-}
+
 
 .nav-logo {
   height: 130px;
@@ -158,11 +158,6 @@ nav ul li a:hover {
   transition: .3s;
 }
 
-.nav-link{
-  align-self: flex-end;
-  margin-left: 20px;
-  float: right;
-}
 
 .main-content{
   display: block;
@@ -182,7 +177,7 @@ font-size: 2.5rem;
 a.test {
   display: inline-block!important;
   color: #ff7800!important;
-  font-size: 2.5rem;
+  font-size: 2.rem;
 }
 a.test:hover {
   text-decoration: none;
@@ -203,9 +198,11 @@ a.test:hover {
 }
 .main-jumbotron {
   width: 80vw;
-  margin: 300px auto 10vh auto;
 }
 
+.jumbotron {
+  margin-bottom: 0!important;
+}
 #style-1::-webkit-scrollbar
 {
 	width: 12px;
@@ -216,6 +213,11 @@ a.test:hover {
   height: 200px;
   width: 200px;
   margin-top: 50px;
+}
+.schedule-page {
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 
@@ -312,7 +314,6 @@ a.test:hover {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 10vh;
 }
 
 .edit-team {
@@ -396,6 +397,7 @@ a.nav-link {
   height: 6vh;
   background-color: #e9ecef;
   display: flex;
+  border-top: 1px solid black;
 }
 .footer-boxes {
   display: flex;
@@ -464,6 +466,7 @@ justify-content: center;
   align-items: center;
 }
 .schedule {
+  margin: 0 auto;
 }
 .teeet {
   height: 75px;
@@ -511,6 +514,7 @@ justify-content: center;
 
 .box-container {
   display: flex;
+  border-bottom: 2px solid black;
 }
 
 .buttonss {
@@ -558,7 +562,6 @@ ul li.support-bullets {
 .schedule-na {
   background-color: transparent!important;
   background: transparent!important;
-
 }
 .schedule-box {
   display: flex;
@@ -621,4 +624,8 @@ ul li.support-bullets {
   background-color: transparent;
   background: transparent!important;
 
+}
+
+.buu {
+  align-self: flex-start;
 }

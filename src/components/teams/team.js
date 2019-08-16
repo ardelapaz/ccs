@@ -47,7 +47,6 @@ render() {
                                 <CardTitle className = "player-name">Player1</CardTitle>
                             </Card>
                         </div>
-                        <Button className = "btn btn-danger" href = "/user/support">Edit Team</Button>
                     </div>
                 </div>
                 </Jumbotron>

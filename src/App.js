@@ -70,7 +70,7 @@ class App extends Component {
      <div className="App">
        <main>
        <Navigation />
-         <Route exact path = "/" component = { Hub } />
+          <Route exact path = "/" component = { Hub } />
           <Route exact path = "/dashboard" component = { Dashboard } />
           <Route exact path = "/team" component = { Team } />
           <Route exact path = "/teams" component = { TeamList } />
@@ -82,7 +82,7 @@ class App extends Component {
        </main>
       </div>
     } else {
-        render = this.props.location.pathname = '/register' ? <Register /> : <Login />;
+        render = <Login />
     }
     return (
         <div>

@@ -45,12 +45,12 @@ componentWillUnmount() {
         let render;
         if(this.state.user) {
             render = 
-            <li onClick = {this.signOut.bind(this)} className = {this.state.activeTab === "Support" ? 'nav-link-box-active' : 'nav-link-box'}><a className = 'nav-link-header' href="/">Logout</a></li>
+            <li onClick = {this.signOut.bind(this)} className = 'nav-link-box'><a className = 'nav-link-header' href="/">Logout</a></li>
         }
         return(
-            <div>
-             {render}
-            </div>
+          <div>
+            {render}
+          </div>
         )
     }
 }
